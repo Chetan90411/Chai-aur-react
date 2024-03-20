@@ -10,7 +10,7 @@ function Github() {
   //   }, []);
   const data = useLoaderData();
   return (
-    <div className="text-center m-4 bg-zinc-500 text-white p-4 text-3xl">
+    <div className="text-center m-4 bg-zinc-500 text-white p-4 text-3xl flex items-center justify-center flex-col gap-5">
       Github Followers: {data.followers}
       <img src={data.avatar_url} alt="Git pictuer" className="w-40" />
     </div>
