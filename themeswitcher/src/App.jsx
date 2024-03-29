@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { ThemeProvider } from "./context/theme";
 import ThemeBtn from "./components/ThemeBtn";
@@ -26,7 +26,9 @@ function App() {
           <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
             <ThemeBtn />
           </div>
-          <div className="w-full max-w-sm mx-auto"><Card /></div>
+          <div className="w-full max-w-sm mx-auto">
+            <Card />
+          </div>
         </div>
       </div>
     </ThemeProvider>
